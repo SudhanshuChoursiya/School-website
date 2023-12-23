@@ -1,0 +1,150 @@
+.page_name_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f55656;
+  padding: 4rem 0;
+  margin-bottom: 2.5rem;
+}
+
+.page_title {
+  font-size: 2.2rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+.section_wrapper {
+  margin: 2.5rem auto;
+  width: 950px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section_wrapper .content {
+  display: flex;
+  align-items: center;
+}
+
+.content .second_half {
+  margin-left: 2rem;
+}
+
+.first_half .content_img {
+  height: 240px;
+  width: 370px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.second_half {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #f8f8f8;
+  height: 240px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.second_half .heading {
+  font-size: 1.85rem;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.second_half .sub_heading {
+  font-size: 1.55rem;
+  text-transform: uppercase;
+  color: #2581b0;
+  font-weight: 600;
+}
+
+.second_half .paragraph {
+  font-size: 1.55rem;
+}
+
+.enquire_now {
+  text-decoration: none;
+}
+
+.enquire_now_btn {
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  background-color: #3179ac;
+  font-weight: bold;
+  color: white;
+  border-radius: 7px;
+  padding: 1rem 2.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+@media (min-width: 200px) and (max-width: 499px) {
+  .section_wrapper {
+    width: auto;
+  }
+
+  .first_half .content_img {
+    height: 20rem;
+    width: 80vw;
+  }
+
+  .btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second_half .paragraph {
+    text-align: center;
+    width: 80vw;
+  }
+
+  .section_wrapper .content {
+    flex-direction: column;
+  }
+
+  .content .second_half {
+    margin: 2rem 0;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+  .section_wrapper {
+    width: auto;
+  }
+
+  .first_half .content_img {
+    height: 20rem;
+    width: 80vw;
+  }
+
+  .btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second_half .paragraph {
+    text-align: center;
+    width: 80vw;
+  }
+
+  .section_wrapper .content {
+    flex-direction: column;
+  }
+
+  .content .second_half {
+    margin: 2rem 0;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+}

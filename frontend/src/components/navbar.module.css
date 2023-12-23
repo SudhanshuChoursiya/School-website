@@ -1,0 +1,85 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.2rem 0;
+}
+
+.logo_title {
+  font-size: 1.8rem;
+}
+
+.first_half {
+  display: flex;
+  align-items: center;
+}
+
+.second_half {
+  display: flex;
+  align-items: center;
+}
+
+.navlist_container {
+  display: flex;
+  align-items: center;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #292827;
+}
+
+.navlist {
+  margin: 0 2rem;
+  font-size: 1.5rem;
+  list-style: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.login_btn {
+  background-color: gold;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1.3rem;
+  font-weight: bold;
+  margin-left: 3rem;
+  font-size: 1.3rem;
+}
+
+.hambuger_container {
+  display: none;
+  margin-right: 1.2rem;
+}
+
+.hambuger_icon {
+  font-size: 2.8rem;
+}
+
+@media (min-width: 200px) and (max-width: 499px) {
+  .hambuger_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navlist_container {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+  .hambuger_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navlist_container {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+}

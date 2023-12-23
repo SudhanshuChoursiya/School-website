@@ -1,0 +1,125 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border-top: 2px solid #262726;
+  padding: 2rem 0;
+}
+
+.contact_list_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_list_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+  border-right: 1px solid #565656;
+}
+
+.contact_list_icon {
+  font-size: 2.5rem;
+}
+
+.contact_list_item:last-child {
+  border-right: none;
+}
+
+.contact_list_item > :nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+  color: gold;
+}
+
+.contact_list_item > :nth-child(2) {
+  font-size: 1.45rem;
+}
+
+.navlist_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+}
+
+.navlist {
+  font-size: 1.35rem;
+  list-style: none;
+  margin: 0 2rem;
+  text-transform: capitalize;
+}
+
+.copyright_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright_container p {
+  font-size: 1.22rem;
+  text-transform: capitalize;
+  text-align: center;
+  width:90vw;
+}
+
+@media (min-width: 200px) and (max-width: 499px) {
+  .contact_list_container {
+    flex-direction: column;
+    border-bottom: 1px solid #565656;
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  .contact_list_item {
+    border-right: none;
+    margin-bottom: 2rem;
+  }
+
+  .navlist_container {
+    border-bottom: 1px solid #565656;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .navlist {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+  .contact_list_container {
+    flex-direction: column;
+    border-bottom: 1px solid #565656;
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  .contact_list_item {
+    border-right: none;
+    margin-bottom: 2rem;
+  }
+
+  .navlist_container {
+    border-bottom: 1px solid #565656;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .navlist {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+}

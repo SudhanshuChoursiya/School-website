@@ -1,0 +1,200 @@
+.page_name_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f55656;
+  padding: 4rem 0;
+  margin-bottom: 2.5rem;
+}
+
+.page_title {
+  font-size: 2.2rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+.vision_mission_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vision_mission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vision_mission h2 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.vision_mission p {
+  width: 70%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.vision_mission .icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3178aa;
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+
+.vision_mission .icon_container .icon {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.textual_container {
+  display: flex;
+  justify-content: center;
+  width: 990px;
+  margin: 2rem auto;
+}
+
+.textual_container > :nth-child(1) {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.content > :nth-child(2) {
+  margin-left: 7rem;
+}
+
+.first_half .content_img {
+  height: 250px;
+  width: 380px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.second_half {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.second_half .heading {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+.second_half .paragraph {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 200px) and (max-width: 499px) {
+  .vision_mission_container {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+
+  .vision_mission {
+    margin: 2rem 0;
+  }
+
+  .textual_container {
+    width: 90vw;
+    margin: 2rem auto;
+  }
+
+  .first_half .content_img {
+    height: 20rem;
+    width: 80vw;
+  }
+
+  .second_half {
+    align-items: center;
+  }
+  .second_half .heading {
+    text-align: center;
+    margin-top: 1.2rem;
+  }
+
+  .btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .second_half .paragraph {
+    text-align: center;
+    width: 80vw;
+  }
+
+  .textual_container > :nth-child(1) {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+
+  .textual_container > :nth-child(2) {
+    flex-direction: column;
+  }
+
+  .content > :nth-child(2) {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+  .vision_mission_container {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+
+  .vision_mission {
+    margin: 2rem 0;
+  }
+
+  .textual_container {
+    width: 90vw;
+    margin: 2rem auto;
+  }
+
+  .first_half .content_img {
+    height: 20rem;
+    width: 80vw;
+  }
+
+  .second_half {
+    align-items: center;
+  }
+  .second_half .heading {
+    text-align: center;
+    margin-top: 1.2rem;
+  }
+
+  .btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .second_half .paragraph {
+    text-align: center;
+    width: 80vw;
+  }
+
+  .textual_container > :nth-child(1) {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+
+  .textual_container > :nth-child(2) {
+    flex-direction: column;
+  }
+
+  .content > :nth-child(2) {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+}
