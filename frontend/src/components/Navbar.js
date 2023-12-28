@@ -1,18 +1,31 @@
-"use client"
-import { useState } from "react";
+"use client";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import Sidebar from "./Sidebar.js";
-import {
-  Menu
-} from "@mui/icons-material";
+import { Menu } from "@mui/icons-material";
 const Navbar = () => {
-  const [showMenu,setShowMenu]=useState(false);
+  const pathname = usePathname();
+  const [showMenu, setShowMenu] = useState(false);
+
+  const hideSideBar = () => {
+    setShowMenu(false);
+  };
+  
+  useEffect(() => {
+    hideSideBar();
+  }, [pathname]);
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.first_half}>
-      <span className={styles.hambuger_container} onClick={()=>setShowMenu(!showMenu)}><Menu className={styles.hambuger_icon
-      }/></span>
+        <span
+          className={styles.hambuger_container}
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          <Menu className={styles.hambuger_icon} />
+        </span>
         <h2 className={styles.logo_title}>Adarsh public school</h2>
       </div>
 
@@ -31,10 +44,11 @@ const Navbar = () => {
             <li className={styles.navlist}>admission</li>
           </Link>
         </ul>
-        
-        <button className={styles.login_btn}>Login</button>
+        <Link href="/login">
+          <button className={styles.login_btn}>Login</button>
+        </Link>
       </div>
-      <Sidebar showMenu={showMenu} setShowMenu={setShowMenu}/>
+      <Sidebar showMenu={showMenu} setShowMenu={setShowMenu} />
     </nav>
   );
 };

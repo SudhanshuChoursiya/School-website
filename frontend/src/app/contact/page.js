@@ -4,7 +4,7 @@ const Contactpage = () => {
   return (
     <>
       <div className={styles.page_name_bar}>
-        <h1 className={styles.page_title}>about us</h1>
+        <h1 className={styles.page_title}>contact us</h1>
       </div>
       <div className={styles.contact_details_wrapper}>
         <div className={styles.contact_details_container}>

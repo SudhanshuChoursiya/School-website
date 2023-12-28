@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #e64b30;
-  padding: 1.25rem;
+  padding: 1.25rem 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -23,9 +23,11 @@
   color: white;
   font-size: 1.65rem;
   text-transform: capitalize;
-  margin-left: 1rem;
+  margin-left: 0.7rem;
   font-weight: 600;
 }
+
+
 
 .first__half .sidebar__header__icon {
   font-size: 2.7rem !important;
@@ -44,6 +46,13 @@
   text-decoration: none;
   color: black;
   margin: 1rem;
+  padding:0 0.5rem;
+}
+
+.sidebar__list:hover{
+  background-color: rgb(51,50,50);
+  color: white;
+  padding:0 0.5rem;
 }
 
 .sidebar__list__icon {
