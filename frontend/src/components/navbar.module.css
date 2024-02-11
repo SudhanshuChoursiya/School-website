@@ -48,7 +48,7 @@
   font-size: 1.3rem;
 }
 
-.login_btn:hover{
+.login_btn:hover {
   background-color: #f3c007;
 }
 
@@ -71,6 +71,10 @@
   .navlist_container {
     display: none;
   }
+
+  .deshboard_btn {
+    display: none;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 599px) {
@@ -81,6 +85,10 @@
   }
 
   .navlist_container {
+    display: none;
+  }
+
+  .deshboard_btn {
     display: none;
   }
 }

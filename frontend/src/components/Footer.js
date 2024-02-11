@@ -9,7 +9,7 @@ const Footer = () => {
           <span>
             <RoomOutlined className={styles.contact_list_icon} />
           </span>
-          <span>Adarsh Public School Kota,Sogaria.</span>
+          <span>Adarsh Academy Kota,Sogaria.</span>
         </div>
         <div className={styles.contact_list_item}>
           <span>
@@ -21,7 +21,7 @@ const Footer = () => {
           <span>
             <EmailOutlined className={styles.contact_list_icon} />
           </span>
-          <span>adarshachool@gmail.com</span>
+          <span>adarshacademy@gmail.com</span>
         </div>
       </div>
 
@@ -44,7 +44,7 @@ const Footer = () => {
       </ul>
 
       <div className={styles.copyright_container}>
-        <p>copyright &copy; 2024 adarsh school kota , all rights reserved.</p>
+        <p>copyright &copy; 2024 adarsh academy kota , all rights reserved.</p>
       </div>
     </footer>
   );

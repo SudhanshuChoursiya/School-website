@@ -57,15 +57,15 @@ const AboutPage = () => {
           <div className={styles.first_half}>
             <img
               className={styles.content_img}
-              src="/home_school_bg.jpg"
+              src="/book_background.jpg"
               alt="img"
             />
           </div>
           <div className={styles.second_half}>
             <div className={styles.quote_container}>
-            <h1 className={styles.heading}>
-              "Good teachers know the best in students."
-            </h1>
+              <h1 className={styles.heading}>
+                "Good teachers know the best in students."
+              </h1>
             </div>
             <p className={styles.paragraph}>
               The qualified and experienced faculty at Modern School offers

@@ -27,6 +27,13 @@
   font-weight: 600;
 }
 
+.loggedin_user_name{
+  font-size:1.3rem;
+  color: white;
+  font-weight: bold;
+  padding:0 0.8rem;
+  text-transform: capitalize;
+}
 
 
 .first__half .sidebar__header__icon {

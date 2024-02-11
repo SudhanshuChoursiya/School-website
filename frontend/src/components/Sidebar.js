@@ -10,8 +10,10 @@ import {
   ContactSupportSharp,
   Collections,
   School,
+  Dashboard,
 } from "@mui/icons-material";
-const Sidebar = ({ showMenu, setShowMenu }) => {
+
+const Sidebar = ({ showMenu, setShowMenu, isLoggedin, userInfo }) => {
   const iOS =
     typeof navigator !== "undefined" &&
     /iPad|iPhone|iPod/.test(navigator.userAgent);
@@ -38,8 +40,13 @@ const Sidebar = ({ showMenu, setShowMenu }) => {
             <div className={styles.sidebar__header}>
               <div className={styles.first__half}>
                 <PersonOutline className={styles.sidebar__header__icon} />
-
-                <Link href="/login">login & signup</Link>
+                {!isLoggedin ? (
+                  <Link href="/login">login & signup</Link>
+                ) : (
+                  <span className={styles.loggedin_user_name}>
+                    Hi, {userInfo.name}
+                  </span>
+                )}
               </div>
               <div className={styles.second__half}>
                 <Image
@@ -90,6 +97,15 @@ const Sidebar = ({ showMenu, setShowMenu }) => {
                 <li className={styles.sidebar__item}>admissions</li>
               </div>
             </Link>
+            {isLoggedin && userInfo.is_admin && (
+              <Link href="/dashboard" className={styles.sidebar__list}>
+                <div className={styles.list__wrapper}>
+                  <Dashboard className={styles.sidebar__list__icon} />
+
+                  <li className={styles.sidebar__item}>dashboard</li>
+                </div>
+              </Link>
+            )}
           </div>
         </SwipeableDrawer>
       ) : (

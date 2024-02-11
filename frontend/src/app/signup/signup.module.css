@@ -13,6 +13,7 @@
   background-color: #efefef;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .img_container {
@@ -146,9 +147,15 @@
   font-size: 1.4rem;
 }
 
+.alert_container{
+  position: absolute;
+  top: -7rem;
+  width:100%;
+}
+
 @media (min-width: 200px) and (max-width: 499px) {
   .wrapper {
-    min-height: 75vh;
+    min-height: 78vh;
   }
 
   .container {
@@ -168,7 +175,7 @@
 
 @media (min-width: 500px) and (max-width: 599px) {
   .wrapper {
-    min-height: 75vh;
+    min-height: 78vh;
   }
 
   .container {

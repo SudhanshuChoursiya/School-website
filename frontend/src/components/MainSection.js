@@ -13,9 +13,9 @@ const MainSection = () => {
             />
           </div>
           <div className={styles.second_half}>
-            <h1 className={styles.heading}>welcome to adarsh school</h1>
+            <h1 className={styles.heading}>welcome to adarsh academy</h1>
             <p className={styles.paragraph}>
-              Adarsh public School gives its students an extraordinary
+              Adarsh academy gives its students an extraordinary
               education, anchored in timeless values. We empower children to
               develop into citizens who live lives of purpose and distinction.
             </p>
@@ -31,7 +31,7 @@ const MainSection = () => {
           <div className={styles.first_half}>
             <img
               className={styles.content_img}
-              src="/home_school_bg.jpg"
+              src="/kids.jpg"
               alt="img"
             />
           </div>

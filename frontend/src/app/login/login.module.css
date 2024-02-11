@@ -13,6 +13,7 @@
   background-color: #efefef;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .img_container {
@@ -38,7 +39,7 @@
 }
 
 .form .heading {
-  font-stretch: 1.5rem;
+  font-size: 1.5rem;
   color: rgb(103, 99, 99);
 }
 
@@ -126,6 +127,13 @@
   text-decoration: none;
   font-size: 1.4rem;
 }
+
+.alert_container{
+  position: absolute;
+  top: -7rem;
+  width:100%;
+}
+
 
 @media (min-width: 200px) and (max-width: 499px) {
   .wrapper {

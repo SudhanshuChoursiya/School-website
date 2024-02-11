@@ -151,6 +151,10 @@
   height: 100%;
 }
 
+.alert_container {
+  width: 100%;
+}
+
 @media (min-width: 200px) and (max-width: 499px) {
   .contact_details_wrapper {
     width: 85vw;
